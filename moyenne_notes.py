@@ -122,8 +122,7 @@ affichage(temp_etu, temp_tp1, temp_tp2, temp_exam, temp_moy)
 print("\nVoici les notes des étudiants après l'augmentation de 10 % sur l'examen :\n")
 
 for i in range(len(liste_exam)):
-    liste_exam[i] *= 1.1
-    liste_exam[i] = round(liste_exam[i], 4)
+    liste_exam[i] = round(liste_exam[i] * 1.1, 4)
 
 liste_moyennes = calcul_moyenne(liste_tp1, liste_tp2, liste_exam)
 affichage(liste_etu, liste_tp1, liste_tp2, liste_exam, liste_moyennes)
