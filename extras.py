@@ -1,0 +1,11 @@
+# Exemple d'un algorithme de tri rapide
+fausse_liste_moy = [98.5, 87.2, 35.2, 76.4, 42.0]
+while True:
+    temp_moy = fausse_liste_moy.copy()
+    for i in range(len(fausse_liste_moy)):
+        if i != 0:
+            if fausse_liste_moy[i] > fausse_liste_moy[i - 1]:
+                fausse_liste_moy[i], fausse_liste_moy[i - 1] = fausse_liste_moy[i - 1], fausse_liste_moy[i]
+    if fausse_liste_moy == temp_moy:
+        break
+print(fausse_liste_moy)
