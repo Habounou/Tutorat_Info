@@ -9,3 +9,16 @@ while True:
     if fausse_liste_moy == temp_moy:
         break
 print(fausse_liste_moy)
+
+
+# Différence entre .append() et l'opérateur '+' (inverse de ce que j'avais dit à la première rencontre)
+lettres_rand1 = ['t', 'u']
+lettres_rand2 = ['j', 'z']
+lettres_rand3 = []
+
+lettres_rand4 = lettres_rand1 + lettres_rand2
+print(lettres_rand4)
+
+lettres_rand3.append(lettres_rand1)
+lettres_rand3.append(lettres_rand2)
+print(lettres_rand3)
