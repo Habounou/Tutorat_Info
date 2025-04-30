@@ -74,11 +74,15 @@ moyenne_g = moyenne_groupe(liste_moyennes)
 print("\nVoici les élèves ayant une moyenne supérieure à la moyenne de leur groupe (" + str(moyenne_g) + " %) :\n")
 etu_sup_index = []
 
-for note in liste_moyennes:
-    if note > moyenne_g:
-        etu_sup_index.append(liste_moyennes.index(note))
+for i in range(len(liste_etu)):
+    if liste_etu[i] > moyenne_g:
+        etu_sup_index.append(i)
 
 temp_moy, temp_etu, temp_tp1, temp_tp2, temp_exam = [], [], [], [], []
+
+# if etu_sup_index:
+    # for i in range(len(etu_sup_index)):
+    # index = etu_sup_index[i]
 
 if etu_sup_index:
     for index in etu_sup_index:

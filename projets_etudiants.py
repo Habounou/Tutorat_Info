@@ -5,10 +5,12 @@ donnees = ["Alice Dupont,15,17,18", "Bernard Poulin,12,16,19", "Raymond Genet,18
 
 # 2
 livrables_dict = {}
+
 for donnee in donnees:
     donnees_split = donnee.split(",")
     print(donnees_split)
     livrables_dict[donnees_split[0]] = donnees_split[1:]
+
 print("\n" + str(livrables_dict))
 
 

@@ -22,3 +22,4 @@ print(lettres_rand4)
 lettres_rand3.append(lettres_rand1)
 lettres_rand3.append(lettres_rand2)
 print(lettres_rand3)
+
