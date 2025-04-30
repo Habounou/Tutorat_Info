@@ -1,6 +1,4 @@
-# Tutorat_Info
-
-## Exercice
+# Exercice 1
 
 Un professeur désire gérer les notes de ses étudiants. On suppose qu’il a 5 étudiants. Pour cela, il a décidé d’utiliser les listes comme structures de données.
 On vous demande de saisir les informations suivantes pour 5 étudiants en respectant l’affichage suivant :
@@ -30,3 +28,26 @@ L’étudiant X a eu X1 dans tp1, X2 dans tp2 et X3 dans son examen ce qui lui d
 5-	Quels sont les noms des étudiants ayant réussi le cours ? Pour réussir un cours, un étudiant doit avoir au moins 60% comme moyenne dans les deux TPS et 60% dans l’examen.
 
 6-	Le professeur a décidé d’accorder un bonus à ces étudiants pour leurs sérieux et leurs persévérances. Pour cela, il a décidé d’accorder une augmentation de 10% de la note de l’examen de tous les étudiants. Réalisez cette augmentation puis faites appel à la fonction calcul_moyenne et affichage pour vérifier s’il y a eu des changements.
+
+
+# Exercice 2
+Un professeur souhaite suivre la progression de 5 étudiants dans la réalisation de leur projet. Chaque étudiant doit soumettre trois livrables tout au long du semestre. Pour simplifier la gestion, les données seront saisies sous la forme d'une chaîne de caractères séparée par des virgules, selon le format suivant : prenom nom,note1,note2,note3
+
+Le professeur saisira 5 lignes, une par étudiant.
+
+## Objectifs du programme :
+1- Lire les données de 5 étudiants sous forme de chaînes. Exemple d’entrée :
+Alice Dupont,15,17,18
+
+2- À l’aide de split(), construire : Un dictionnaire livrables :
+clé = "Prénom Nom" ; valeur = liste de 3 notes [note1, note2, note3].
+
+3- Écrire une fonction calcul_moyennes(livrables) qui prend en paramètre le dictionnaire
+livrable puis calcul et ajoute la moyenne de la liste des notes par étudiant. La moyenne
+est la somme des 3 notes qui divise 3.
+
+4- Écrire une fonction afficher_resultats(livrables) qui affiche les résultats de chaque
+étudiant. Voici un exemple d’un des étudiants : Alice Dupont a eu 15, 17, 18 pour ses livrables, soit une moyenne de 16.67
+
+5- Afficher les noms des étudiants ayant la meilleure moyenne. Attention, un ou plusieurs
+étudiants peuvent avoir la même note.
