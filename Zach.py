@@ -1,6 +1,7 @@
 import random as rd
 import json
 
+
 class Test:
 
     def __init__(self):
