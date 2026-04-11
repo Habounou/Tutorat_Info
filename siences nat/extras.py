@@ -11,7 +11,7 @@ while True:
 print(fausse_liste_moy)
 
 
-# Différence entre .append() et l'opérateur '+' (inverse de ce que j'avais dit à la première rencontre)
+# Différence entre .append() et l'opérateur '+'
 lettres_rand1 = ['t', 'u']
 lettres_rand2 = ['j', 'z']
 lettres_rand3 = []
